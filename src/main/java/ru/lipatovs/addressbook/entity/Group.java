@@ -1,8 +1,11 @@
 package ru.lipatovs.addressbook.entity;
 
+import javax.persistence.*;
 import java.util.Date;
-
-public class Group {
+@Entity
+public class Group  {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     public int id;
     public String name;
     public Date createdAt;

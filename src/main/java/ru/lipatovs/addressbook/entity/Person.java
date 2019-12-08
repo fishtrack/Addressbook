@@ -1,8 +1,12 @@
 package ru.lipatovs.addressbook.entity;
 
+import javax.persistence.*;
 import java.util.Date;
-
+@Entity
+@Table(name="persons")
 public class Person {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     public int id;
     public String firstName;
     public String lastName;
