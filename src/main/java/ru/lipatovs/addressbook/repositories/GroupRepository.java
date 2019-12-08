@@ -5,6 +5,6 @@ import ru.lipatovs.addressbook.entity.Group;
 import ru.lipatovs.addressbook.entity.Person;
 
 public interface GroupRepository extends JpaRepository<Group, Long> {
-    Group findByName(String name);
-    Group findById(int id);
+//    Group findByName(String name);
+//    Group findById(int id);
 }
