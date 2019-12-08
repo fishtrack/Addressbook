@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Контакты</title>
+</head>
+<body>
+<h2>Контакты</h2>
+<table class="table">
+    <thead class="text-white">
+    <tr>
+        <th class="bg-success" scope="col">Id</th>
+        <th class="bg-success" scope="col">Имя</th>
+        <th class="bg-success" scope="col">Фамилия</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="person: ${persons}">
+        <td th:text="${person.id}"></td>
+        <td th:text="${person.firstName}"></td>
+        <td th:text="${person.lastName}"></td>
+    </tr>
+    </tbody>
+</table>
+
+</body>
+</html>
