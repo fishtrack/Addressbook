@@ -3,6 +3,7 @@ package ru.lipatovs.addressbook.entity;
 import javax.persistence.*;
 import java.util.Date;
 @Entity
+@Table(name="groups")
 public class Group  {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
